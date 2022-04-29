@@ -1,7 +1,7 @@
 // Перепиши функцію так, щоб вона приймала один
 // об'єкт параметрів замість набору незалежних аргументів.
 
-function calcBMI(weight, height) {
+function calcBMI({ height, weight }) {
   const numericWeight = Number(weight.replace(',', '.'));
   const numericHeight = Number(height.replace(',', '.'));
   return Number((numericWeight / numericHeight ** 2).toFixed(1));

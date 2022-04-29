@@ -1,6 +1,6 @@
 ## 3 Module 6 Lesson
 
-19.30
+20.35
 
 ### Lesson Plan
 
@@ -13,4 +13,4 @@
 
 ### Tasks
 
-- 6 tasks
+- 8 tasks

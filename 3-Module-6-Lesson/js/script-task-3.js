@@ -1,7 +1,10 @@
 // Перепиши функцію так, щоб вона приймала один
 // об'єкт параметрів замість набору незалежних аргументів.
 
-function getBotReport(companyName, repairBots, defenceBots) {
+function getBotReport({
+  companyName,
+  bots: { repair: repairBots, defence: defenceBots },
+}) {
   return `${companyName} has ${repairBots + defenceBots} bots in stock`;
 }
 

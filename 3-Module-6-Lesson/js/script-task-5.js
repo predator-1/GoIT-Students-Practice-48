@@ -4,7 +4,12 @@
 // "default", якщо у partialContact немає такої властивості.
 
 function createContact(partialContact) {
-  return {};
+  return {
+    list: 'default',
+    ...partialContact,
+    id: generateId(),
+    createdAt: Date.now(),
+  };
 }
 
 console.log(
