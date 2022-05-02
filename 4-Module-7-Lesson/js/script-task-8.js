@@ -3,9 +3,18 @@
 function printContactsInfo({ names, phones }) {
   const nameList = names.split(',');
   const phoneList = phones.split(',');
-  for (let i = 0; i < nameList.length; i += 1) {
-    console.log(`${nameList[i]}: ${phoneList[i]}`);
-  }
+  // for (let i = 0; i < nameList.length; i += 1) {
+  //   console.log(`${nameList[i]}: ${phoneList[i]}`);
+  // }
+  // nameList.forEach((elem, i) => {
+  //   console.log(`${elem}: ${phoneList[i]}`);
+  // });
+  // nameList.forEach((elem, i) => {
+  //   console.log(`${nameList[i]}: ${phoneList[i]}`);
+  // });
+  nameList.forEach((elem, i, array) => {
+    console.log(`${array[i]}: ${phoneList[i]}`);
+  });
 }
 
 printContactsInfo({

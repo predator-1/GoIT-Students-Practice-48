@@ -1,10 +1,16 @@
 // refactoring with 'forEach'
 
+// const ttt = undefined;
+// if (ttt && ttt.length) {
+//   ttt.forEach(el => console.log(el));
+// }
+
 function calсulateAverage(...args) {
   let total = 0;
-  for (let i = 0; i < args.length; i++) {
-    total += args[i];
-  }
+  // for (let i = 0; i < args.length; i++) {
+  //   total += args[i];
+  // }
+  args.forEach(el => (total += el));
   return total / args.length;
 }
 
