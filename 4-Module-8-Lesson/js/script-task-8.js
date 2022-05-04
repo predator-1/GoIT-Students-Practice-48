@@ -84,6 +84,6 @@ const cars = [
   },
 ];
 
-const sortByDescendingPrice = cars => {};
+const sortByDescendingPrice = cars => cars.sort((a, b) => b.price - a.price);
 
-console.table(sortByDescendingPrice(cars));
+console.table(sortByDescendingPrice(cars)); // Desc

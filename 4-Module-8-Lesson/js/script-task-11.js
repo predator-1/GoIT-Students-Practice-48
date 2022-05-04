@@ -84,6 +84,7 @@ const cars = [
   },
 ];
 
-const getModelsOnSale = cars => {};
+const getModelsOnSale = cars =>
+  cars.filter(el => el.onSale).map(el => el.model);
 
 console.table(getModelsOnSale(cars));

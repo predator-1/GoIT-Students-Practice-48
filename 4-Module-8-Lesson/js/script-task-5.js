@@ -84,7 +84,7 @@ const cars = [
   },
 ];
 
-const getCarsWithType = (cars, type) => {};
+const getCarsWithType = (cars, type) => cars.filter(el => el.type === type);
 
 console.table(getCarsWithType(cars, 'suv'));
 console.table(getCarsWithType(cars, 'sedan'));

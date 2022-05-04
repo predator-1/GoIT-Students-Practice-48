@@ -83,7 +83,7 @@ const cars = [
   },
 ];
 
-const getCarByModel = (cars, model) => {};
+const getCarByModel = (cars, model) => cars.find(el => el.model === model);
 
 console.log(getCarByModel(cars, 'F-150'));
 console.log(getCarByModel(cars, 'CX-9'));

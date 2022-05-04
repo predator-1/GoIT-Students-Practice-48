@@ -84,6 +84,9 @@ const cars = [
   },
 ];
 
-const sortByAscendingAmount = cars => {};
+const sortByAscendingAmount = cars =>
+  [...cars].sort((a, b) => a.amount - b.amount);
 
 console.table(sortByAscendingAmount(cars));
+
+console.table(cars);

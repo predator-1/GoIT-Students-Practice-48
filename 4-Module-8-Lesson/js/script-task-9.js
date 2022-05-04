@@ -85,7 +85,34 @@ const cars = [
   },
 ];
 
-const sortByModel = (cars, order) => {};
+const sortByModel = (cars, order) =>
+  // cars.sort((a, b) => (order === 'asc' ? ascCompare(a, b) : descCompare(a, b)));
+  cars.sort((a, b) =>
+    order === 'asc'
+      ? a.model.localeCompare(b.model)
+      : b.model.localeCompare(a.model),
+  );
+
+const ascCompare = (a, b) => {
+  if (a.model < b.model) {
+    return -1;
+  }
+  if (a.model > b.model) {
+    return 1;
+  }
+
+  return 0;
+};
+
+const descCompare = (a, b) => {
+  if (b.model < a.model) {
+    return -1;
+  }
+  if (b.model > a.model) {
+    return 1;
+  }
+  return 0;
+};
 
 console.table(sortByModel(cars, 'asc'));
 console.table(sortByModel(cars, 'desc'));

@@ -84,6 +84,6 @@ const cars = [
   },
 ];
 
-const getModels = cars => {};
+const getModels = cars => cars.map(el => el.model);
 
 console.table(getModels(cars));

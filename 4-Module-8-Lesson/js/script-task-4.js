@@ -84,6 +84,6 @@ const cars = [
   },
 ];
 
-const getCarsWithDiscount = cars => {};
+const getCarsWithDiscount = cars => cars.filter(el => el.onSale === true);
 
 console.table(getCarsWithDiscount(cars));

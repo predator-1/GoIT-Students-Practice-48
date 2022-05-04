@@ -84,6 +84,9 @@ const cars = [
   },
 ];
 
-const getTotalAmount = cars => {};
+const getTotalAmount = cars =>
+  cars.reduce((acc, el) => {
+    return (acc += el.amount);
+  }, 0);
 
 console.log(getTotalAmount(cars));

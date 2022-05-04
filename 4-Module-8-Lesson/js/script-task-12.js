@@ -84,6 +84,7 @@ const cars = [
   },
 ];
 
-const getSortedCarsOnSale = cars => {};
+const getSortedCarsOnSale = cars =>
+  cars.filter(el => el.onSale).sort((a, b) => a.price - b.price);
 
 console.table(getSortedCarsOnSale(cars));
