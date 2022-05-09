@@ -3,13 +3,14 @@
 const phonebook = {
   contacts: [],
   add(contact) {
+    const date = this.getDate();
     const newContact = {
       list: 'default',
       ...contact,
-      id: generateId(),
-      createdAt: getDate(),
+      id: this.generateId(),
+      createdAt: this.getDate(),
     };
-    contacts.push(newContact);
+    this.contacts.push(newContact);
   },
   generateId() {
     return '_' + Math.random().toString(36).substr(2, 9);
@@ -32,3 +33,5 @@ console.log(
     email: 'poly@hotmail.com',
   }),
 );
+
+console.log(phonebook.contacts);
