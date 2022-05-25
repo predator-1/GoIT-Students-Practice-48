@@ -1,6 +1,6 @@
 ## 6 Module 12 Lesson
 
-19.30
+20.45
 
 ### Lesson Plan
 
